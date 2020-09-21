@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Product = ({match, data}) => {
-  var product = data.find(p => p.id == match.params.productId);
+  var product = data.find(p => p.id === match.params.productId);
   var productData;
 
   if (product) {
